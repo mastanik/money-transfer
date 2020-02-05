@@ -39,16 +39,16 @@ GET http://localhost:4567/customers
 200
 [
     {
-      id: 8,
-      firstName: "Kobe",
-      lastName: "Bryant",
-      dateOfBirth: "1978-08-23"
+      "id": 8,
+      "firstName": "Kobe",
+      "lastName": "Bryant",
+      "dateOfBirth": "1978-08-23"
     },
     {
-      id: 10,
-      firstName: "John",
-      lastName: "Doe",
-      dateOfBirth: "1999-09-09"
+      "id": 10,
+      "firstName": "John",
+      "lastName": "Doe",
+      "dateOfBirth": "1999-09-09"
     }
 ]
 ```
@@ -57,10 +57,10 @@ GET http://localhost:4567/customer/8
 ```json
 200
 {
-    id: 8,
-    firstName: "Kobe",
-    lastName: "Bryant",
-    dateOfBirth: "1978-08-23"
+    "id": 8,
+    "firstName": "Kobe",
+    "lastName": "Bryant",
+    "dateOfBirth": "1978-08-23"
 }
 ```
 
@@ -96,10 +96,10 @@ GET http://localhost:4567/accounts
 ```json
 200
 {
-    id: 2,
-    customerId: 6,
-    currency: "EUR",
-    balance: 102.75
+    "id": 2,
+    "customerId": 6,
+    "currency": "EUR",
+    "balance": 102.75
 }
 ```
 
@@ -107,10 +107,10 @@ GET http://localhost:4567/accounts
 ```json
 200
 {
-    id: 2,
-    customerId: 6,
-    currency: "EUR",
-    balance: 102.75
+    "id": 2,
+    "customerId": 6,
+    "currency": "EUR",
+    "balance": 102.75
 }
 ```
 
