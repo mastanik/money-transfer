@@ -1,6 +1,13 @@
 # Simple Money Transfer Project
 
-The application exposes 3 REST endpoints in order to create Customer, Account and make an operation. It uses in-memory H2 database for persistence.
+The application exposes 3 REST endpoints in order to create Customer, Account and make an Operations. It uses in-memory H2 database for persistence.
+The following main libraries are used:
+* Java 11
+* Google Guice
+* Spark
+* JOOQ
+* HikariCP
+* Flyway
 
 ## Building the app
 
