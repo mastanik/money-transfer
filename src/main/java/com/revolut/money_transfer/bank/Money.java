@@ -5,6 +5,7 @@ import com.revolut.money_transfer.bank.exception.DifferentCurrenciesException;
 import com.revolut.money_transfer.bank.exception.MoneyValueTooBigException;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Objects;
 
 import static java.math.BigDecimal.ROUND_HALF_EVEN;
@@ -12,7 +13,7 @@ import static java.math.BigDecimal.ROUND_HALF_EVEN;
 public class Money {
 
     public static final int SCALE = 4;
-    public static final int ROUNDING_MODE = ROUND_HALF_EVEN;
+    public static final RoundingMode ROUNDING_MODE = RoundingMode.HALF_EVEN;
     public static final int MAX_INTEGER_PART = 19;
 
     private final BigDecimal amount;

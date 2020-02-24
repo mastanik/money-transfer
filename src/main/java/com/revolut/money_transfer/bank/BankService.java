@@ -62,11 +62,9 @@ public class BankService {
                 .collect(Collectors.toCollection(() -> supportedCurrencies));
 
         this.currencyExchangeRateDao.findAll()
-                .forEach(currencyExchangeRate -> {
-                    this.exchangeRate.put(
-                            new ExchangeRateKey(currencyExchangeRate.getSourceCurrency(), currencyExchangeRate.getTargetCurrency()),
-                            currencyExchangeRate.getExchangeRate());
-                });
+                .forEach(currencyExchangeRate -> this.exchangeRate.put(
+                        new ExchangeRateKey(currencyExchangeRate.getSourceCurrency(), currencyExchangeRate.getTargetCurrency()),
+                        currencyExchangeRate.getExchangeRate()));
     }
 
     public boolean isCurrencySupported(String currency) {
